@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { MusicaService } from '../musica.service';
 import { musica } from '../musica';
@@ -12,10 +13,22 @@ export class TabelaMusicaComponent implements OnInit {
 
   constructor(private service: MusicaService) { }
 
-  ngOnInit(): void {
-    this.service.getMusica().subscribe((musica) => {
-      this.musica = musica;
-    });
+  ngOnInit() {
+
+    this.loadMusica()
   }
 
-}
+  loadMusica(){
+    this.service.getMusica().subscribe({
+      next: data => this.musica = data
+    })
+  }
+
+  delete(musica: musica){
+    this.service.delete(musica).subscribe({
+      next: () => this.loadMusica()
+    })
+  }
+  }
+
+

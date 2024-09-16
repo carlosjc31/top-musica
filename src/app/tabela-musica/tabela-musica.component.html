@@ -1,1 +1,22 @@
-<p>tabela-musica works!</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">nome</th>
+      <th scope="col">price</th>
+      <th scope="col">artista</th>
+      <th scope="col">ano</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let musica of musica">
+      <th scope="row">{{musica.id}}</th>
+      <td>{{musica.nome}}</td>
+      <td>{{musica.price}}</td>
+      <td>{{musica.artista}}</td>
+      <td>{{musica.ano}}</td>
+      <td><button class="btn btn-danger"(click)="delete(musica)">Remover</button></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,4 +1,7 @@
+import { MusicaService } from './musica.service';
 import { Component } from '@angular/core';
+import { musica } from './musica';
+
 
 @Component({
   selector: 'app-root',

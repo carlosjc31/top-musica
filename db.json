@@ -38,14 +38,14 @@
   {
     "id": 6,
     "nome": "Heaven",
-    "price": 0.99,
+    "price": 9.00,
     "artista": "Live",
     "ano": 1995
   },
   {
     "id": 7,
     "nome": "Que país é esse",
-    "price": 0.99,
+    "price": 8.00,
     "artista": "Legião Urbana",
     "ano": 1987
   }
