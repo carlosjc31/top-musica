@@ -15,5 +15,4 @@ export class MusicaService {
     return this.http.get<musica[]>(this.apiUrl);
   }
 
-  constructor() { }
 }

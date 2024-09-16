@@ -1,4 +1,5 @@
-musica: [
+{
+ "musica":[
   {
     "id": 1,
     "nome": "Zombie",
@@ -48,3 +49,5 @@ musica: [
     "artista": "Legião Urbana",
     "ano": 1987
   }
+]
+}
